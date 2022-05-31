@@ -1,0 +1,58 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class=" heading" > FACE RECOGNITION WEB APP</h3>
+      <br>
+
+      <p style="font-size: 18px;font-family: 'Roboto Condensed', sans-serif;">Model is trained to identify the following objects: </p>
+      
+      <b class="family_members" style=" font-size: 15px;">
+        
+        <div class="member">FATHER</div>
+        <br>
+        <div class="member">SON</div>
+      <br>
+      </b>
+    <br>
+
+      <label style="font-family: 'Lato', sans-serif;">Webcam View  </label>
+      <div id="camera" ></div>
+      <br>
+      <div id="result"> </div>
+      <br><br>
+      <button class="btn btn-info" onclick="take_snapshot()"style="font-family: 'Lato', sans-serif;">Capture Image</button>
+      &nbsp;&nbsp;&nbsp;
+      <button class="btn btn-success" onclick="check()"style="font-family: 'Lato', sans-serif;">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 20px;font-family: 'Lato', sans-serif;">OBJECT : <span id="result_objectName"></span>  </p>
+      <p style="font-size: 20px;font-family: 'Lato', sans-serif;">ACCURACY : <span id="result_objectAccuracy"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
